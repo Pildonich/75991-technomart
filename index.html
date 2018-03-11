@@ -39,7 +39,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">Техномарт</h1>
+      <h2 class="visually-hidden">Техномарт</h2>
       <section class="promo-block">
         <div class="promo-item">
           <h3>Материалы</h3>
@@ -87,8 +87,8 @@
               <b>25500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -103,8 +103,8 @@
               <b>15500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -119,8 +119,8 @@
               <b>25500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -134,8 +134,8 @@
               <b>12500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
         </ul>
@@ -232,8 +232,8 @@
       <section class="contacts">
         <h2>КОНТАКТЫ</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map.png" alt="Карта" width="300" height="158">
-        <a class="button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+        <img src="img/map.png" alt="Магазин компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург" width="300" height="158">
+        <button class="contacts-write-us" type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
       </section>
     </main>
     <footer class="main-footer">
@@ -278,16 +278,40 @@
       </p>
     </footer>
 
-    <section class="modal modal-write-us">
+    <section class="modal-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us-item">
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input id="write-us-email" type="email" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-text">Текст письма:</label>
+          <input id="write-us-text" type="text" name="text" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-big.jpg" width="940" height="446" alt="Магазин компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal-cart">
 
-      <p>Ваше имя:</p>
-      <!-- Здесь будет форма -->
-      <p>Ваш e-mail:</p>
-      <!-- Здесь будет форма -->
-      <p>Текст письма:</p>
-      <!-- Здесь будет форма -->
+      <h2>Товар добавлен в корзину!</h2>
 
-      <span class="modal-close">x</span>
+      <a href="#">Оформить заказ</a>
+      <button class="modal-cart-next" type="button">Продолжить покупки</button>
+
+       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

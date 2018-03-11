@@ -50,6 +50,53 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цена:</legend>
+              <label class="visually-hidden" for="filter-price">Цена</label>
+              <input class="visually-hidden filter-input filter-input-range" type="range" name="radio" id="filter-price">
+
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch">
+                  <label for="filter-bosch">Bosch</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                  <label for="filter-interskol">Интерскол</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita">
+                  <label for="filter-makita">Makita</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">Dewalt</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">Hitachi</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rechargeable" id="filter-rechargeable">
+                  <label for="filter-rechargeable">Аккумуляторные</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network" id="filter-network" checked>
+                  <label for="filter-network">Сетевые</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
         <!-- Здесь будет форма -->
       </section>
 
@@ -69,8 +116,8 @@
               <b>15500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -85,8 +132,8 @@
               <b>25500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -100,8 +147,8 @@
               <b>12500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -116,8 +163,8 @@
               <b>15500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -132,8 +179,8 @@
               <b>25500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -147,8 +194,8 @@
               <b>12500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -163,8 +210,8 @@
               <b>15500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -179,8 +226,8 @@
               <b>25500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -194,8 +241,8 @@
               <b>12500 Р.</b>
             </p>
             <div class="catalog-item-action">
-              <a href="#" class="button buy">Купить</a>
-              <a href="#" class="button in-bookmark">В закладки</a>
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button in-bookmark" type="button">В закладки</button>
             </div>
           </li>
 
@@ -217,7 +264,7 @@
     </main>
     <footer class="main-footer">
       <nav class="footer-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo_footer.png" alt="Логотип Техномарт" width="220" height="68">
         </a>
         <ul class="navigation-top">
@@ -257,14 +304,14 @@
       </p>
     </footer>
 
-    <section class="modal cart">
+    <section class="modal-cart">
 
-      <p>Товар добавлен в корзину!</p>
-      <!-- Здесь будет форма -->
+      <h2>Товар добавлен в корзину!</h2>
+
       <a href="#">Оформить заказ</a>
-      <a class="button" href="#">Продолжить покупки</a>
+      <button class="modal-cart-next" type="button">Продолжить покупки</button>
 
-      <span class="modal-close">x</span>
+       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
 
