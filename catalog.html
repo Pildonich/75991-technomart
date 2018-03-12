@@ -10,7 +10,10 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo_header.png" width="220" height="47" alt="Логотип Техномарт">
         </a>
-        <span>Поиск:</span>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input name="search" placeholder="Поиск:" type="search">
+          <button type="submit">Поиск:</button>
+        </form>
         <a class="bookmarks" href="#">Закладки</a>
         <a class="basket" href="#">Корзина</a>
         <a class="order" href="#">Оформить заказ</a>
@@ -51,12 +54,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Цена:</legend>
-              <label class="visually-hidden" for="filter-price">Цена</label>
-              <input class="visually-hidden filter-input filter-input-range" type="range" name="radio" id="filter-price">
 
-          </fieldset>
           <fieldset>
             <legend>Производители:</legend>
               <ul>
@@ -290,9 +288,9 @@
         Все права защищены
       </p>
       <div class="footer-social">
-        <a class="social-button" href="#">Вконтакте</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Инстаграм</a>
+        <a class="social-button" href="#" aria-label="Вконтакте">тут будет svg</a>
+        <a class="social-button" href="#" aria-label="Фейсбук">тут будет svg</a>
+        <a class="social-button" href="#" aria-label="Инстаграм">тут будет svg</a>
       </div>
       <p class="footer-copyright">
         <b>Разработано:</b>
@@ -309,7 +307,7 @@
       <h2>Товар добавлен в корзину!</h2>
 
       <a href="#">Оформить заказ</a>
-      <button class="modal-cart-next" type="button">Продолжить покупки</button>
+      <a href="#">Продолжить покупки</a>
 
        <button class="modal-close" type="button">Закрыть</button>
     </section>

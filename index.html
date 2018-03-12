@@ -10,7 +10,10 @@
         <a class="main-header-logo">
           <img src="img/logo_header.png" width="220" height="47" alt="Логотип Техномарт">
         </a>
-        <span>Поиск:</span>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input name="search" placeholder="Поиск:" type="search">
+          <button type="submit">Поиск:</button>
+        </form>
         <a class="bookmarks" href="#">Закладки</a>
         <a class="basket" href="#">Корзина</a>
         <a class="order" href="#">Оформить заказ</a>
@@ -77,7 +80,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="#">
-              <img src="img/BFG-9000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/BFG-9000.png" width="220" height="165" alt="Перфоратор BOSCH BFG 9000">
               <h3 class="catalog-item-title">
               Перфоратор BOSCH BFG 9000
               </h3>
@@ -233,7 +236,7 @@
         <h2>КОНТАКТЫ</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/map.png" alt="Магазин компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург" width="300" height="158">
-        <button class="contacts-write-us" type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
+        <a href="writeus.html">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -264,9 +267,9 @@
         Все права защищены
       </p>
       <div class="footer-social">
-        <a class="social-button" href="#">Вконтакте</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Инстаграм</a>
+        <a class="social-button" href="#" aria-label="Вконтакте">тут будет svg</a>
+        <a class="social-button" href="#" aria-label="Фейсбук">тут будет svg</a>
+        <a class="social-button" href="#" aria-label="Инстаграм">тут будет svg</a>
       </div>
       <p class="footer-copyright">
         <b>Разработано:</b>
@@ -279,7 +282,7 @@
     </footer>
 
     <section class="modal-write-us">
-      <h2 class="visually-hidden">Напишите нам</h2>
+      <h3 class="visually-hidden">Напишите нам</h3>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us-item">
           <label for="write-us-name">Ваше имя:</label>
@@ -291,7 +294,7 @@
         </p>
         <p class="write-us-item">
           <label for="write-us-text">Текст письма:</label>
-          <input id="write-us-text" type="text" name="text" placeholder="В свободной форме">
+          <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
@@ -309,7 +312,7 @@
       <h2>Товар добавлен в корзину!</h2>
 
       <a href="#">Оформить заказ</a>
-      <button class="modal-cart-next" type="button">Продолжить покупки</button>
+      <a href="#">Продолжить покупки</a>
 
        <button class="modal-close" type="button">Закрыть</button>
     </section>
