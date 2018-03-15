@@ -144,7 +144,427 @@ a {
 }
 
 .site-navigation a:focus {
-  background-color: #161d29;
-  opacity: 0.5;
+  background-color: #1d2739;
+
 }
+
+.container {
+  background-color: #ffffff;
+}
+
+.promo-item1 {
+  background-color: #ffbf47;
+}
+
+.promo-item2 {
+  background-color: #3bbce3;
+}
+
+.promo-item3 {
+  background-color: #dc91d8;
+}
+
+.promo-item4 {
+  background-color: #8ed78f;
+}
+
+
+.promo-block h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+
+}
+
+.promo-block .btn {
+
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  background-color: rgba(000, 000, 000, 0.1);
+
+
+}
+
+.promo-block .btn:hover {
+  background-color: rgba(000, 000, 000, 0.2);
+
+}
+
+.promo-block .btn:focus {
+  background-color: rgba(000, 000, 000, 0.3);
+}
+
+.promo-slaider .btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.promo-slaider .btn:hover {
+  background-color: #ca2c37;
+
+}
+
+.promo-slaider .btn:focus {
+  background-color: #ba2732;
+
+}
+
+.popular {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #f9f5f0;
+}
+
+.popular h2{
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+
+  text-transform: uppercase;
+
+}
+
+.popular .btn {
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.catalog-list {
+  font-family: "PT Sans", Arial, sans-serif;
+  list-style: none;
+}
+
+.catalog-item {
+  border: 1px solid;
+  border-color: #eaeaea;
+}
+
+
+.catalog-item .catalog-item-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.catalog-item .catalog-item-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.catalog-item .catalog-item-price del {
+  color: #a9a9a9;
+}
+
+.catalog-item .catalog-item-price b {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.catalog-item-action  {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-item-action .button-buy {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.catalog-item-action .button-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.catalog-item-action .button-buy:focus {
+  background-color: #518534;
+}
+
+.catalog-item-action .in-bookmark {
+  color: #32425c;
+  border: 2px solid;
+  border-color: #63a63e;
+  background-color: #ffffff;
+}
+
+.catalog-item-action .in-bookmark:hover {
+  border-color: #32425c;
+}
+
+.catalog-item-action .in-bookmark:focus {
+  border-color: #32425c;
+  opacity: 0.3;
+}
+
+
+
+.popular-producers-list {
+  list-style: none;
+}
+
+.popular-producers-list li:hover {
+  box-shadow: 0 0 25px #293449;
+}
+
+.popular-producers-list li:focus {
+  box-shadow: 0 0 10px #293449;
+}
+/* не работает  */
+
+
+.services {
+  background-color: #f4f8f9;
+
+}
+
+.services h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.services li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #32425c;
+  list-style: none;
+}
+
+.services .services-content h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+
+
+}
+
+.services .services-content p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.services-content .btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff5357;
+  text-transform: uppercase;
+}
+
+.colum {
+
+}
+
+.about h2,
+.contacts h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.about p,
+.contacts p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+
+}
+
+.about li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+
+}
+
+.сolumn .btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #32425c;
+
+}
+
+.navigation-top  {
+  list-style: none;
+}
+
+.navigation-top  a {
+  color: #ffffff;
+}
+
+.navigation-down {
+  list-style: none;
+
+}
+
+.navigation-down a {
+  color: #ffd180;
+
+}
+
+.footer-contacts a {
+  color: #ffffff;
+
+}
+
+.footer-color {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.footer-copyright a {
+  color: #ffd180;
+}
+
+.footer-feedback a {
+  color: #ffd180;
+}
+
+.modal-write-us label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.modal-write-us input::placeholder,
+.modal-write-us textarea::placeholder {
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #a9a9a9;
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+  border: 2px solid;
+  color: #dee3e4;
+}
+
+.modal-write-us .btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff5357;
+  text-transform: uppercase;
+
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+.modal-map {
+  box-shadow: 0 0 16px #2f2a2b;
+}
+
+.modal-cart {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.modal-cart h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.modal-cart .btn1 {
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+.modal-cart .btn2 {
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
 
