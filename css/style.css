@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #f4f7f9;
+
+}
+
+.navigation {
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+
+.navigation .btn {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+
+
+.navigation input {
+  background-color: #293449;
+  border: none;
+}
+
+.navigation input::placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navigation .btn:hover,
+.navigation input:hover {
+  background-color: #212a3a;
+}
+
+.navigation .btn:focus {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+
+.navigation input:focus {
+  background-color: #ffffff;
+
+}
+
+.navigation .order {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+
+.navigation .order:hover {
+  background-color: #5fbb2d;
+}
+
+.navigation .order:focus {
+  background-color: #518534;
+  opacity: 0.6;
+}
+
+.main-header h1 {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ee3643;
+
+  font-style: italic;
+}
+
+.main-header .header-contacts a {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ee3643;
+}
+
+.main-header .header-contacts {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #32425c;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.user-navigation {
+  list-style: none;
+}
+
+.user-navigation a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-navigation a:hover {
+  color: #ee3643;
+}
+
+.user-navigation a:focus {
+  color: #000000;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover {
+  background-color: #212a3a;
+}
+
+.site-navigation a:focus {
+  background-color: #161d29;
+  opacity: 0.5;
+}
+
