@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 
-.bug {
+.container {
   display: block;
 }
 
@@ -183,19 +183,19 @@ a {
 
   text-transform: uppercase;
 
-  background-color: rgba(000, 000, 000, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .promo-block .btn:hover,
 .promo-block .btn:focus {
-  background-color: rgba(000, 000, 000, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo-block .btn:active {
-  background-color: rgba(000, 000, 000, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.promo-slaider .btn {
+.promo-slider .btn {
   font-size: 14px;
   line-height: 18px;
 
@@ -204,12 +204,12 @@ a {
   text-transform: uppercase;
 }
 
-.promo-slaider .btn:hover,
-.promo-slaider .btn:focus {
+.promo-slider .btn:hover,
+.promo-slider .btn:focus {
   background-color: #ca2c37;
 }
 
-.promo-slaider .btn:active {
+.promo-slider .btn:active {
   background-color: #ba2732;
 }
 
@@ -233,7 +233,18 @@ a {
 
   color: #ffffff;
   background-color: #ee3643;
+  text-transform: uppercase;
 }
+
+.popular .btn:hover,
+.popular .btn:focus {
+  background-color: #ca2c37;
+}
+
+.popular .btn:active {
+  background-color: #ba2732;
+}
+
 
 .catalog-list {
   font-family: "PT Sans", Arial, sans-serif;
@@ -270,6 +281,7 @@ a {
 }
 
 .catalog-item-action {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
 
@@ -277,6 +289,7 @@ a {
 }
 
 .catalog-item-action .button-buy {
+
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -313,13 +326,13 @@ a {
 
 .popular-producers-list li:hover,
 .popular-producers-list li:focus {
-  box-shadow: 0 0 25px #293449;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .popular-producers-list li:active {
-  box-shadow: 0 0 10px #293449;
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
-/* не работает  */
+
 
 .services {
   background-color: #f4f8f9;
@@ -328,7 +341,7 @@ a {
 .services h2 {
   font-size: 30px;
   line-height: 30px;
-
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 }
@@ -349,6 +362,17 @@ a {
   background-color: #32425c;
   list-style: none;
 }
+
+.services li:hover,
+.services li:focus {
+  background-color: #293449;
+}
+
+.services li:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
 
 .services-content h3 {
   font-size: 36px;
@@ -375,9 +399,15 @@ a {
   text-transform: uppercase;
 }
 
-.colum {
-
+.services-content .btn:hover,
+.services-content .btn:focus {
+  background-color: #ca2c37;
 }
+
+.services-content .btn:active {
+  background-color: #ba2732;
+}
+
 
 .about h2,
 .contacts h2 {
@@ -399,13 +429,22 @@ a {
   line-height: 20px;
 }
 
-.сolumn .btn {
+.about-company .btn {
   font-size: 14px;
   line-height: 18px;
 
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
+}
+
+.about-company .btn:hover,
+.about-company .btn:focus {
+  background-color: #ca2c37;
+}
+
+.about-company .btn:active {
+  background-color: #ba2732;
 }
 
 .main-footer {
@@ -419,6 +458,19 @@ a {
 .navigation-top,
 .navigation-down {
   list-style: none;
+}
+
+.navigation-top:hover,
+.navigation-down:hover,
+.navigation-top:focus,
+.navigation-down:focus {
+  text-decoration: underline;
+}
+
+.navigation-top:active,
+.navigation-down:active {
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 .navigation-top a,
@@ -443,6 +495,20 @@ a {
   color: #ffd180;
 }
 
+.footer-copyright a:hover,
+.footer-feedback a:hover,
+.footer-copyright a:focus,
+.footer-feedback a:focus {
+  text-decoration: underline;
+}
+
+.footer-copyright a:active,
+.footer-feedback a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+
 .modal-write-us label {
   font-size: 18px;
   line-height: 18px;
@@ -450,12 +516,17 @@ a {
   color: #000000;
 }
 
-.modal-write-us input::placeholder,
-.modal-write-us textarea::placeholder {
+.modal-write-us input,
+.modal-write-us textarea {
   font-family: "PT sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color: #000000;
+}
 
+.modal-write-us input::placeholder,
+.modal-write-us textarea::placeholder {
+  font: inherit;
   color: #a9a9a9;
 }
 
@@ -489,6 +560,15 @@ a {
   border: none;
 }
 
+.modal-write-us .btn:hover,
+.modal-write-us .btn:focus {
+  background-color: #ca2c37;
+}
+
+.modal-write-us .btn:active {
+  background-color: #ba2732;
+}
+
 .modal-map {
   box-shadow: 0 0 16px #2f2a2b;
 }
@@ -496,7 +576,7 @@ a {
 .modal-cart h3 {
   font-size: 30px;
   line-height: 30px;
-
+  font-weight: 400;
   color: #000000;
 }
 
@@ -507,6 +587,15 @@ a {
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
+}
+
+.modal-cart .btn1:hover,
+.modal-cart .btn1:focus {
+  background-color: #ca2c37;
+}
+
+.modal-cart .btn1:active {
+  background-color: #ba2732;
 }
 
 .modal-cart .btn2 {
