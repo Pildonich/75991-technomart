@@ -15,7 +15,7 @@ a {
 }
 
 .main-header {
-    font-size: 17px;
+  font-size: 17px;
   line-height: 17px;
 
   color: #ffffff;
@@ -260,11 +260,11 @@ a {
   text-align: center;
 }
 
-.catalog-item .catalog-item-price del {
+.catalog-item-price del {
   color: #a9a9a9;
 }
 
-.catalog-item .catalog-item-price b {
+.catalog-item-price b {
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -350,7 +350,7 @@ a {
   list-style: none;
 }
 
-.services .services-content h3 {
+.services-content h3 {
   font-size: 36px;
   line-height: 36px;
 
@@ -358,7 +358,7 @@ a {
   text-transform: uppercase;
 }
 
-.services .services-content p {
+.services-content p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
