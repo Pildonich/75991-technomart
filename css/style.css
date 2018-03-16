@@ -2,41 +2,40 @@ body {
   margin: 0;
   padding: 0;
 
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
 }
 
+.bug {
+  display: block;
+}
+
 .main-header {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 17px;
+    font-size: 17px;
   line-height: 17px;
-  font-weight: 400;
+
   color: #ffffff;
 
   background-color: #f4f7f9;
-
 }
 
 .navigation {
-
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
 
   background-color: #293449;
 }
-
 
 .navigation .btn {
   color: #ffffff;
   background-color: #293449;
 }
-
-
 
 .navigation input {
   background-color: #293449;
@@ -44,26 +43,25 @@ a {
 }
 
 .navigation input::placeholder {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
 }
 
 .navigation .btn:hover,
+.navigation .btn:focus,
 .navigation input:hover {
   background-color: #212a3a;
 }
 
-.navigation .btn:focus {
+.navigation .btn:active {
   background-color: #161d29;
   opacity: 0.6;
 }
 
 .navigation input:focus {
   background-color: #ffffff;
-
 }
 
 .navigation .order {
@@ -71,12 +69,12 @@ a {
   background-color: #63a63e;
 }
 
-
-.navigation .order:hover {
+.navigation .order:hover,
+.navigation .order:focus {
   background-color: #5fbb2d;
 }
 
-.navigation .order:focus {
+.navigation .order:active {
   background-color: #518534;
   opacity: 0.6;
 }
@@ -90,17 +88,17 @@ a {
   font-style: italic;
 }
 
-.main-header .header-contacts a {
+.header-contacts a {
   font-size: 21px;
   line-height: 21px;
-  font-weight: 400;
+
   color: #ee3643;
 }
 
 .main-header .header-contacts {
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+
   color: #32425c;
 }
 
@@ -117,17 +115,19 @@ a {
 }
 
 .user-navigation a {
+  font-size: 21px;
+  line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-navigation a:hover {
+.user-navigation a:hover,
+.user-navigation a:focus {
   color: #ee3643;
 }
 
-.user-navigation a:focus {
+.user-navigation a:active {
   color: #000000;
-  background-color: #ffffff;
   opacity: 0.3;
 }
 
@@ -139,13 +139,13 @@ a {
   color: #ffffff;
 }
 
-.site-navigation a:hover {
-  background-color: #212a3a;
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   background-color: #1d2739;
-
 }
 
 .container {
@@ -168,73 +168,59 @@ a {
   background-color: #8ed78f;
 }
 
-
 .promo-block h3 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
-
 }
 
 .promo-block .btn {
-
-
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
-
 
   color: #ffffff;
 
   text-transform: uppercase;
 
   background-color: rgba(000, 000, 000, 0.1);
-
-
 }
 
-.promo-block .btn:hover {
-  background-color: rgba(000, 000, 000, 0.2);
-
-}
-
+.promo-block .btn:hover,
 .promo-block .btn:focus {
+  background-color: rgba(000, 000, 000, 0.2);
+}
+
+.promo-block .btn:active {
   background-color: rgba(000, 000, 000, 0.3);
 }
 
 .promo-slaider .btn {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
 }
 
-.promo-slaider .btn:hover {
+.promo-slaider .btn:hover,
+.promo-slaider .btn:focus {
   background-color: #ca2c37;
-
 }
 
-.promo-slaider .btn:focus {
+.promo-slaider .btn:active {
   background-color: #ba2732;
-
 }
 
 .popular {
-  font-family: "Cuprum", Arial, sans-serif;
   background-color: #f9f5f0;
 }
 
 .popular h2{
-
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
+
   color: #32425c;
 
   text-transform: uppercase;
@@ -242,10 +228,9 @@ a {
 }
 
 .popular .btn {
-
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -259,7 +244,6 @@ a {
   border: 1px solid;
   border-color: #eaeaea;
 }
-
 
 .catalog-item .catalog-item-title {
   font-size: 18px;
@@ -285,11 +269,10 @@ a {
   background-color: #ee3643;
 }
 
-.catalog-item-action  {
-  font-family: "Cuprum", Arial, sans-serif;
+.catalog-item-action {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   text-transform: uppercase;
 }
 
@@ -298,11 +281,12 @@ a {
   background-color: #63a63e;
 }
 
-.catalog-item-action .button-buy:hover {
+.catalog-item-action .button-buy:hover,
+.catalog-item-action .button-buy:focus {
   background-color: #5fbb2d;
 }
 
-.catalog-item-action .button-buy:focus {
+.catalog-item-action .button-buy:active {
   background-color: #518534;
 }
 
@@ -313,41 +297,38 @@ a {
   background-color: #ffffff;
 }
 
-.catalog-item-action .in-bookmark:hover {
+.catalog-item-action .in-bookmark:hover,
+.catalog-item-action .in-bookmark:focus {
   border-color: #32425c;
 }
 
-.catalog-item-action .in-bookmark:focus {
+.catalog-item-action .in-bookmark:active {
   border-color: #32425c;
   opacity: 0.3;
 }
-
-
 
 .popular-producers-list {
   list-style: none;
 }
 
-.popular-producers-list li:hover {
+.popular-producers-list li:hover,
+.popular-producers-list li:focus {
   box-shadow: 0 0 25px #293449;
 }
 
-.popular-producers-list li:focus {
+.popular-producers-list li:active {
   box-shadow: 0 0 10px #293449;
 }
 /* не работает  */
 
-
 .services {
   background-color: #f4f8f9;
-
 }
 
 .services h2 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
+
   color: #000000;
   text-transform: uppercase;
 }
@@ -356,12 +337,11 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+
   color: #000000;
 }
 
 .services li {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
@@ -371,29 +351,25 @@ a {
 }
 
 .services .services-content h3 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
+
   color: #32425c;
   text-transform: uppercase;
-
-
 }
 
 .services .services-content p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+
   color: #000000;
 }
 
 .services-content .btn {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #ff5357;
   text-transform: uppercase;
@@ -405,10 +381,8 @@ a {
 
 .about h2,
 .contacts h2 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
 
   text-transform: uppercase;
 }
@@ -418,83 +392,61 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
-
 }
 
 .about li {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 400;
-
 }
 
 .сolumn .btn {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
 }
 
 .main-footer {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #32425c;
-
 }
 
-.navigation-top  {
-  list-style: none;
-}
-
-.navigation-top  a {
-  color: #ffffff;
-}
-
+.navigation-top,
 .navigation-down {
   list-style: none;
+}
 
+.navigation-top a,
+.footer-contacts a {
+  color: #ffffff;
 }
 
 .navigation-down a {
   color: #ffd180;
-
-}
-
-.footer-contacts a {
-  color: #ffffff;
-
 }
 
 .footer-color {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #293449;
 }
 
-.footer-copyright a {
-  color: #ffd180;
-}
-
+.footer-copyright a,
 .footer-feedback a {
   color: #ffd180;
 }
 
 .modal-write-us label {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #000000;
 }
 
@@ -503,21 +455,30 @@ a {
   font-family: "PT sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #a9a9a9;
 }
 
 .modal-write-us input,
 .modal-write-us textarea {
   border: 2px solid;
-  color: #dee3e4;
+  border-color: #dee3e4;
+}
+
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.modal-write-us input:focus,
+.modal-write-us textarea:focus {
+  border-color: #ee3643;
 }
 
 .modal-write-us .btn {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #ff5357;
   text-transform: uppercase;
@@ -532,31 +493,26 @@ a {
   box-shadow: 0 0 16px #2f2a2b;
 }
 
-.modal-cart {
-  font-family: "Cuprum", Arial, sans-serif;
-}
-
 .modal-cart h3 {
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
+
   color: #000000;
 }
 
 .modal-cart .btn1 {
-
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
 }
-.modal-cart .btn2 {
 
+.modal-cart .btn2 {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
