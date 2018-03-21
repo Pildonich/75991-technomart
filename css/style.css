@@ -12,6 +12,18 @@ a {
 
 .container {
   display: block;
+  background-color: #ffffff;
+}
+.btn-red {
+  font-size: 14px;
+  line-height: 18px;
+  min-width: 250px;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  border-radius: 2px;
 }
 
 .main-header {
@@ -435,45 +447,44 @@ a {
   color: #000000;
 }
 
-.container {
-  background-color: #ffffff;
-}
+
 
 .promo-block {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 8px;
-
-
-
+  justify-content: space-between;
+  margin-bottom: 53px;
 }
 
 .promo-item1 {
   background-color: #ffbf47;
-  width: 300px;
-  height: 125px;
+  width: 256px;
+  height: 82px;
   padding: 20px 22px;
 }
 
 .promo-item2 {
   background-color: #3bbce3;
-  width: 300px;
-  height: 125px;
+  width: 256px;
+  height: 82px;
   padding: 20px 22px;
+
 }
 
 .promo-item3 {
   background-color: #dc91d8;
-  width: 300px;
-  height: 125px;
+  width: 256px;
+  height: 82px;
   padding: 20px 22px;
+
 }
 
 .promo-item4 {
   background-color: #8ed78f;
-  width: 300px;
-  height: 125px;
+  width: 256px;
+  height: 82px;
   padding: 20px 22px;
+
 }
 
 
@@ -576,8 +587,9 @@ a {
 .catalog-list {
   font-family: "PT Sans", Arial, sans-serif;
   display: flex;
-  margin: 0px;
+  margin: 20px 0 20px;
   padding: 0px;
+  justify-content: space-between;
 
   list-style: none;
 }
@@ -586,6 +598,16 @@ a {
 .catalog-item {
   border: 1px solid;
   border-color: #eaeaea;
+  width: 178px;
+  height: 276px;
+  padding: 20px;
+
+}
+
+.catalog-item a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -654,7 +676,32 @@ a {
 }
 
 .popular-producers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: : space-betwee;
+  margin: 20px 0px 85px;
+  padding: 0px;
   list-style: none;
+}
+
+.popular-producers-list li{
+  width: 218px;
+  height: 143px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+
+.popular-producers-list li:nth-child(n+5){
+  margin-top: 20px;
+}
+
+.popular-producers-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
 }
 
 .popular-producers-list li:hover,
@@ -668,6 +715,8 @@ a {
 
 
 .services {
+  padding-top: 67px;
+
   background-color: #f4f8f9;
 }
 
@@ -741,12 +790,23 @@ a {
   background-color: #ba2732;
 }
 
+.about-company {
+  display: flex;
+  justify-content: space-between;
+}
 
+.about {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
+}
 .about h2,
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
-
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -765,11 +825,15 @@ a {
 .about-company .btn {
   font-size: 14px;
   line-height: 18px;
-
+  margin-top: 37px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
 }
+
+
 
 .about-company .btn:hover,
 .about-company .btn:focus {
