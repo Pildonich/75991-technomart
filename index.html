@@ -53,7 +53,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <div>
+      </div>
     </header>
     <main class="container">
       <h2 class="visually-hidden">Техномарт</h2>
@@ -211,16 +211,16 @@
     </div>
       <section class="services">
         <div class="center">
-        <h2>Сервисы</h2>
+          <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <span>Слайдер</span>
-        <ul>
-          <li>Доставка</li>
-          <li>Гарантии </li>
-          <li>Кредит</li>
-        </ul>
-        <div class="services-content">
+          <span>Слайдер</span>
+          <ul>
+            <li>Доставка</li>
+            <li>Гарантии </li>
+            <li>Кредит</li>
+          </ul>
+          <div class="services-content">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!
@@ -238,6 +238,7 @@
             Кредитные консультанты придут вам на помощь.
             <a class="btn" href="#">Отправить заявку</a></p>
             <img src="img/credit.png" alt="Кредит" width="465" height="285">
+          </div>
         </div>
       </section>
       <div class="about-company center">
@@ -313,20 +314,24 @@
 
     <section class="modal-write-us">
       <h3 class="visually-hidden">Напишите нам</h3>
-      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-        <p class="write-us-item">
-          <label for="write-us-name">Ваше имя:</label>
-          <input id="write-us-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p class="write-us-item">
-          <label for="write-us-email">Ваш e-mail:</label>
-          <input id="write-us-email" type="email" name="email" placeholder="Для отправки ответа">
-        </p>
-        <p class="write-us-item">
-          <label for="write-us-text">Текст письма:</label>
-          <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="btn" type="submit">Отправить</button>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us">
+          <p class="write-us-item">
+            <label for="write-us-name">Ваше имя:</label>
+            <input id="write-us-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="write-us-item">
+            <label for="write-us-email">Ваш e-mail:</label>
+            <input id="write-us-email" type="email" name="email" placeholder="Для отправки ответа">
+          </p>
+          <p class="write-us-item textarea">
+            <label for="write-us-text">Текст письма:</label>
+            <textarea id="write-us-text" name="text" rows="6" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="write-us-wrapper">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>

@@ -14,10 +14,20 @@ a {
   display: block;
   background-color: #ffffff;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+}
 .btn-red {
+  display: inline-block;
   font-size: 14px;
   line-height: 18px;
-  min-width: 250px;
+
   text-align: center;
   padding: 10px;
   color: #ffffff;
@@ -44,7 +54,7 @@ a {
 
   background-color: #293449;
   width: 100%;
-  height: 43px;
+
   margin-bottom: 47px;
 }
 
@@ -57,7 +67,7 @@ a {
 .navigation .center {
   display: flex;
   flex-direction: row;
-  align-items: center;
+
   justify-content: space-between;
 
 }
@@ -88,6 +98,8 @@ a {
   color: #ffffff;
 }
 
+
+
 .navigation .btn:hover,
 .navigation .btn:focus,
 .navigation input:hover {
@@ -104,6 +116,9 @@ a {
 }
 
 .navigation .order {
+  display: inline-block;
+
+  padding: 15px 21px;
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -151,7 +166,7 @@ a {
   text-align: center;
 
   margin-left: 70px;
-  padding: 0px;
+  padding: 0;
   list-style: none;
 }
 
@@ -679,9 +694,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: : space-betwee;
+  align-content: space-between;
   margin: 20px 0px 85px;
-  padding: 0px;
+  padding: 0;
   list-style: none;
 }
 
@@ -905,12 +920,69 @@ a {
   color: #ee3643;
 }
 
+.modal-write-us {
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  margin-left: -310px;
+  width: 620px;
+  padding: 45px 0 0;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  border-top: 5px solid #ff5357;
+
+}
+
+.write-us-wrapper {
+
+  background-color: #f4f4f4;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+
+  top: 10px;
+  left: 2px;
+  width: 21px;
+  height: 4px;
+
+  background-color: #ff5357;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 
 .modal-write-us label {
   font-size: 18px;
   line-height: 18px;
 
   color: #000000;
+
 }
 
 .modal-write-us input,
@@ -918,7 +990,22 @@ a {
   font-family: "PT sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  box-sizing: border-box;
+  width: 220px;
+  padding: 8px 15px;
+
   color: #000000;
+  border: 2px solid;
+  border-radius: 3px;
+  border-color: #dee3e4;
+  margin-top: 10px;
+
+}
+
+.modal-write-us textarea {
+  width: 100%;
+  resize: none;
+
 }
 
 .modal-write-us input::placeholder,
@@ -927,11 +1014,6 @@ a {
   color: #a9a9a9;
 }
 
-.modal-write-us input,
-.modal-write-us textarea {
-  border: 2px solid;
-  border-color: #dee3e4;
-}
 
 .modal-write-us input:hover,
 .modal-write-us textarea:hover {
@@ -942,6 +1024,26 @@ a {
 .modal-write-us textarea:focus {
   border-color: #ee3643;
 }
+
+.write-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  padding: 0 80px 0px;
+}
+
+.write-us-item {
+  width: 220px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
 
 .modal-write-us .btn {
   font-size: 14px;
@@ -955,6 +1057,10 @@ a {
   text-align: center;
   vertical-align: middle;
   border: none;
+  border-radius: 3px;
+  width: 460px;
+  padding: 10px;
+  margin: 35px 80px;
 }
 
 .modal-write-us .btn:hover,
