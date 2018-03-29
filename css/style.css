@@ -526,22 +526,173 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  padding: 0;
+  margin: 0;
   list-style: none;
+  text-transform: uppercase;
+
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 15px;
+  padding-right: 25px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  box-shadow: 1px 1px 0 0 #c5c9d1;
+  transform: rotate(-45deg);
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-home {
+  display: block;
+  position: relative;
+  width: 20px;
+  margin-right: -5px;
+}
+
+.breadcrumbs-home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 15px;
+  height: 12px;
+
+  background-image: url(../img/svg-technomart/icon-home.svg);
+}
+
+
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .breadcrumbs a {
   color: #000000;
 }
 
-.sorting {
+.catalog-colum {
+  display: flex;
+}
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f7f3ec;
+  border-radius: 2px;
+}
+
+.sort-title {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.sorting-price {
+  display: flex;
+  margin: 0;
+  margin-left: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting-price li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.sorting-item-up {
+  position: relative;
+  padding: 10px;
+}
+
+.sorting-item-up::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 11px;
+  height: 10px;
+
+  background-image: url(../img/svg-technomart/icon-up-dir.svg);
+  opacity: 0.2;
+}
+
+.sorting-item-up:hover::before {
+  opacity: 1;
+}
+
+.sorting-item-up:active::before {
+  background-image: url(../img/svg-technomart/icon-up-dir-active.svg);
+}
+
+.sorting-item-down {
+  position: relative;
+  padding: 10px;
+}
+
+.sorting-item-down::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 11px;
+  height: 10px;
+
+  background-image: url(../img/svg-technomart/icon-down-dir.svg);
+  opacity: 0.2;
+}
+
+.sorting-item-down:hover::before {
+  opacity: 1;
+}
+
+.sorting-item-down:active::before {
+  background-image: url(../img/svg-technomart/icon-down-dir-active.svg);
+}
+
+
+
+
+
+.sorting-type {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.sorting-type li:not(:first-child) {
+  margin-left: 65px;
 }
 
 .sorting-item a {
@@ -634,24 +785,30 @@ input[type="radio"].visually-hidden {
   border-color: #ee3643;
 }
 
-.title-catalog {
-  background-color: #f2f6f8;
-  text-transform: uppercase;
-}
+
 
 .title-catalog h1 {
+  padding: 30px 28px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   color: #32425c;
+  background-color: #f2f6f8;
   text-transform: uppercase;
 }
 
 .pagination-list {
+  display: flex;
+  margin: 52px 0 0;
+  padding: 0;
   list-style: none;
+}
+.pagination-list li:not(:first-child) {
+    margin-left: 10px;
 }
 
 .pagination-item a {
+  display: block;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -659,6 +816,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid;
   border-color: #e5e5e5;
+  border-radius: 2px;
+  padding: 8px 15px 10px;
   text-transform: uppercase;
 }
 
@@ -686,7 +845,9 @@ input[type="radio"].visually-hidden {
 }
 
 .about-catalog {
-  background-color: #f4f8f9;
+  margin-top: 60px;
+  padding: 65px 0 70px;
+  background-color: #f2f6f8;
 }
 
 .about-catalog h2 {
@@ -976,6 +1137,18 @@ input[type="radio"].visually-hidden {
 
 .popular .btn:active {
   background-color: #ba2732;
+}
+
+.catalog-list-inner {
+  font-family: "PT Sans", Arial, sans-serif;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 0;
+  padding: 0;
+
+
+  list-style: none;
 }
 
 
