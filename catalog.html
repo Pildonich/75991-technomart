@@ -78,12 +78,14 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
-          <fieldset>
+          <fieldset class="filter-group">
             <legend>Производители:</legend>
               <ul>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" disabled>
-                  <label for="filter-bosch">Bosch</label>
+                <li class="filter-bosch">
+                  <label for="filter-label">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch">
+                  <span class="filter-checkbox">Bosch</span>
+                  </label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
@@ -103,7 +105,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-group">
             <legend>Питание:</legend>
               <ul>
                 <li class="filter-option">

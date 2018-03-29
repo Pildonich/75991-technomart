@@ -729,11 +729,16 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.filter fieldset {
-  border: none;
+.filter-group {
+  margin: 0;
+  padding: 0 0 23px;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
+
 .filter legend {
+  padding-top: 15px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
@@ -742,6 +747,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter label {
+  position: relative;
+  display: block;
+  padding-left: 35px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -751,28 +759,51 @@ input[type="radio"].visually-hidden {
 
 .filter ul {
   list-style: none;
-  line-height: 20px;
+  margin: 13px 0 0;
+  padding: 0;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #000000;
+.filter-checkbox:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #c5c5c5;
+  border-radius: 2px;
 }
 
-.filter-input:disabled + label {
-  opacity: 0.4;
+.filter-checkbox:after {
+  content: "";
+    position: absolute;
+    left: 11px;
+    bottom: 7px;
+    width: 10px;
+    height: 20px;
+    border: 4px solid #c5c5c5;
+    border-top: 0;
+    border-left: 0;
+    -webkit-box-shadow: 2px 0 0 0 #fff, inset -2px 0 0 0 #fff;
+    box-shadow: 2px 0 0 0 #fff, inset -2px 0 0 0 #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
+
 
 .filters .filter-button {
   font-size: 13px;
   line-height: 18px;
 
   text-transform: uppercase;
-
-  color: #000000;
   background-color: #ffffff;
-  border: 1px solid;
-  border-color: #e5e5e5;
+  display: block;
+  margin: 50px 0 0;
+  padding: 10px 37px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
 
 }
 
