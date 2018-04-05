@@ -59,11 +59,11 @@ if (writeUs) {
   var writeUsClose = writeUs.querySelector(".modal-close");
   var writeUsForm = writeUs.querySelector("form");
   var email = writeUs.querySelector("[name=email]");
-  var name = writeUs.querySelector("[name=name]");
+  var userName = writeUs.querySelector("[name=user-name]");
   var text = writeUs.querySelector("[name=text]");
 
   writeUsForm.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value || !text.value ) {
+  if (!userName.value || !email.value || !text.value ) {
     evt.preventDefault();
     writeUs.classList.remove("modal-error");
     writeUs.offsetWidth = writeUs.offsetWidth;

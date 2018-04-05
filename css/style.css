@@ -1940,7 +1940,7 @@ input[type='radio'].visually-hidden
 
   width: 218px;
   height: 88px;
-  padding: 40px 0;
+  padding: 45px 0;
 
   background-color: #fff;
 }
@@ -1954,6 +1954,7 @@ input[type='radio'].visually-hidden
   line-height: 18px;
 
   display: block;
+  position: relative;
 
   width: 129px;
   margin: 0 auto;
@@ -1975,6 +1976,60 @@ input[type='radio'].visually-hidden
   color: #32425c;
   border-bottom-color: #63a63e;
   background: white;
+}
+
+.actions .bookmark:hover,
+.actions .bookmark:focus
+{
+  color: #32425c;
+  border-color: #32425c;
+}
+
+.actions .bookmark:active
+{
+  color: #32425c;
+  border-color: #32425c;
+  opacity: 0.3;
+}
+
+.actions .buy:hover,
+.actions .buy:focus
+{
+  border-color: #5fbb2d;
+  border-bottom-color: #367315;
+  background-color: #5fbb2d;
+}
+
+.actions .buy:active
+{
+  border-color: #518534;
+  border-bottom-color: #518534;
+  background-color: #518534;
+}
+
+.buy::before
+{
+  position: absolute;
+  top: 7px;
+  left: 10px;
+
+  width: 15px;
+  height: 15px;
+
+  content: '';
+
+  opacity: .3;
+  background-image: url(../img/svg-technomart/icon-cart.svg);
+}
+
+.buy:hover::before
+{
+  opacity: 1;
+}
+
+.buy:active::before
+{
+  opacity: 1;
 }
 
 .catalog-item .actions
