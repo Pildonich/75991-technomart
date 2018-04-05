@@ -4,10 +4,14 @@ var close = popup.querySelector(".modal-close");
 var btn2 = popup.querySelector("[class=btn2]");
 var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+
 var writeUsBtn = document.querySelector(".write-us-btn");
 var writeUs = document.querySelector(".modal-write-us");
-var writeUsClose = writeUs.querySelector(".modal-close");
+
+var writeUsForm = writeUs.querySelector("form");
+var email = writeUs.querySelector("[name=email]");
+var name = writeUs.querySelector("[name=name]");
+var text = writeUs.querySelector("[name=text]");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -39,10 +43,14 @@ mapLink.addEventListener("click", function (evt) {
   mapPopup.classList.add("modal-show");
 });
 
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-show");
-});
+if (mapPopup) {
+  var mapClose = mapPopup.querySelector(".modal-close");
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -58,9 +66,23 @@ writeUsBtn.addEventListener("click", function (evt) {
   writeUs.classList.add("modal-show");
 });
 
-writeUsClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  writeUs.classList.remove("modal-show");
+if (writeUs) {
+  var writeUsClose = writeUs.querySelector(".modal-close");
+
+  writeUsClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    writeUs.classList.remove("modal-show");
+    writeUs.classList.remove("modal-error");
+  });
+}
+
+writeUsForm.addEventListener("submit", function (evt) {
+  if (!name.value || !email.value || !text.value ) {
+    evt.preventDefault();
+    writeUs.classList.remove("modal-error");
+    writeUs.offsetWidth = writeUs.offsetWidth;
+    writeUs.classList.add("modal-error");
+  }
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -68,6 +90,7 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (writeUs.classList.contains("modal-show")) {
       writeUs.classList.remove("modal-show");
+      writeUs.classList.remove("modal-error");
     }
   }
 });
