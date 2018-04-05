@@ -63,13 +63,13 @@ if (writeUs) {
   var text = writeUs.querySelector("[name=text]");
 
   writeUsForm.addEventListener("submit", function (evt) {
-  if (!userName.value || !email.value || !text.value ) {
-    evt.preventDefault();
-    writeUs.classList.remove("modal-error");
-    writeUs.offsetWidth = writeUs.offsetWidth;
-    writeUs.classList.add("modal-error");
-  }
-});
+    if (!userName.value || !email.value || !text.value ) {
+      evt.preventDefault();
+      writeUs.classList.remove("modal-error");
+      writeUs.offsetWidth = writeUs.offsetWidth;
+      writeUs.classList.add("modal-error");
+    }
+  });
 
   writeUsClose.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -83,12 +83,12 @@ if (writeUs) {
   });
 
   window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (writeUs.classList.contains("modal-show")) {
-      writeUs.classList.remove("modal-show");
-      writeUs.classList.remove("modal-error");
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (writeUs.classList.contains("modal-show")) {
+        writeUs.classList.remove("modal-show");
+        writeUs.classList.remove("modal-error");
+      }
     }
-  }
-});
+  });
 }
