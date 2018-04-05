@@ -9,13 +9,11 @@ var writeUsBtn = document.querySelector(".write-us-btn");
 var writeUs = document.querySelector(".modal-write-us");
 var writeUsClose = writeUs.querySelector(".modal-close");
 
-
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   btn2.focus();
 });
-
 
 btn2.addEventListener("click", function (evt) {
   evt.preventDefault();

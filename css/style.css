@@ -3,9 +3,11 @@ body
   font-family: 'Cuprum', Arial, sans-serif;
   font-weight: 400;
 
-  min-width: 940px;
-  margin: 0;
+  min-width: 960px;
+  margin: 0 auto;
   padding: 0;
+
+  background-color: #293449;
 }
 
 a
@@ -22,7 +24,15 @@ img
 .container
 {
   display: block;
+  padding-top: 60px;
 
+  background-color: #fff;
+}
+
+.container-ineer
+{
+  display: block;
+  padding-top: 22px;
   background-color: #fff;
 }
 
@@ -69,7 +79,7 @@ input[type='radio'].visually-hidden
   font-size: 17px;
   line-height: 17px;
 
-  margin-bottom: 60px;
+
   padding-bottom: 57px;
 
   color: #fff;
@@ -146,6 +156,8 @@ input[type='radio'].visually-hidden
 
 .user-help .btn
 {
+  width: 150px;
+  box-sizing: border-box;
   position: relative;
 
   display: block;
@@ -161,15 +173,15 @@ input[type='radio'].visually-hidden
 
 .user-help .bookmarks
 {
-  padding-right: 30px;
+
   padding-left: 42px;
 
 }
 
 .user-help .basket
 {
-  padding-right: 30px;
-  padding-left: 50px;
+
+  padding-left: 49px;
 }
 
 .user-help .inner
@@ -181,6 +193,7 @@ input[type='radio'].visually-hidden
 
 .search
 {
+  width: 272px;
   font-size: 17px;
   line-height: 18px;
 
@@ -648,11 +661,6 @@ input[type='radio'].visually-hidden
 .site-navigation a:active
 {
   background-color: #1d2739;
-}
-
-.catalog-page
-{
-  margin-bottom: 22px;
 }
 
 .breadcrumbs
