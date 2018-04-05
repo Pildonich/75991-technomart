@@ -62,8 +62,6 @@ input[type='radio'].visually-hidden
   font-size: 14px;
   line-height: 18px;
 
-
-
   padding: 10px;
 
   text-align: center;
@@ -109,7 +107,6 @@ input[type='radio'].visually-hidden
   display: flex;
   flex-direction: row;
 }
-
 
 .main-header-logo
 {
@@ -173,14 +170,11 @@ input[type='radio'].visually-hidden
 
 .user-help .bookmarks
 {
-
   padding-left: 42px;
-
 }
 
 .user-help .basket
 {
-
   padding-left: 49px;
 }
 
@@ -1385,8 +1379,6 @@ input[type='radio'].visually-hidden
   display: flex;
   flex-wrap: wrap;
 
-
-
   justify-content: space-between;
 }
 
@@ -1739,8 +1731,6 @@ input[type='radio'].visually-hidden
 
   position: relative;
 
-
-
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -1778,7 +1768,6 @@ input[type='radio'].visually-hidden
   content: '';
 
   background: url(../img/new-flag.png) no-repeat;
-
 }
 
 .catalog-item .actions
@@ -1831,6 +1820,7 @@ input[type='radio'].visually-hidden
 {
   display: none;
 }
+
 .catalog-item:hover .actions
 {
   display: block;
@@ -2356,6 +2346,7 @@ input[type='radio'].visually-hidden
 {
   width: 340px;
 }
+
 .footer-column-2
 {
   width: 600px;
@@ -2406,7 +2397,7 @@ input[type='radio'].visually-hidden
 .navigation-top a,
 .footer-contacts a
 {
-  color: #f1f5f7 ;
+  color: #f1f5f7;
 }
 
 .navigation-down a
@@ -2488,7 +2479,6 @@ input[type='radio'].visually-hidden
   width: 300px;
   margin: 0;
   padding: 0;
-
 }
 
 .footer-color .center
@@ -2784,7 +2774,7 @@ input[type='radio'].visually-hidden
 
 .green-circle
 {
-  background-image: url('../img/svg-technomart/form-1.svg');
+  background-image: url(../img/svg-technomart/form-1.svg);
   background-repeat: no-repeat;
   background-position: 80px center;
 }
