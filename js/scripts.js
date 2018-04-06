@@ -1,4 +1,4 @@
-var link = document.querySelector(".buy");
+var link = document.querySelectorAll(".buy");
 var popup = document.querySelector(".modal-cart");
 var close = popup.querySelector(".modal-close");
 var btn2 = popup.querySelector("[class=btn2]");
@@ -7,11 +7,14 @@ var writeUs = document.querySelector(".modal-write-us");
 var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".modal-map");
 
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  btn2.focus();
-});
+
+for (var i = 0; i < link.length; i++) {
+  link[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    btn2.focus();
+  });
+}
 
 btn2.addEventListener("click", function (evt) {
   evt.preventDefault();
